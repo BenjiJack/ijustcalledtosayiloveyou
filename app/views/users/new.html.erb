@@ -1,9 +1,17 @@
 <div class="row-fluid">
 	<div class="span6 offset2">
-		<h1>span8</h1>
+		<h1>
+			<br>
+			ijust<br>
+			called<br>
+			tosay<br>
+			iloveyou<br>
+		</h1>
+
+		</h1>
 	</div>
 
-	<div class="span3">
+	<div class="span4">
 	  	<h2>
 	 		<%= form_for(@user) do |f| %>
 
@@ -15,6 +23,8 @@
 
 	 		<%= f.label :recipientphone, "Recipient Phone Number" %>
 	 		<%= f.text_field :recipientphone %>
+
+	 		<br>
  
 	 		<%= f.submit "Send it!", class: "btn btn-large btn-primary" %>
 
