@@ -1,0 +1,30 @@
+ @import 'bootstrap';
+
+body {
+  background-color: #000000;
+  padding-top: 200px;
+}
+
+/* Navbar */
+.navbar-inverse .navbar-inner {
+    background-color: #ec602f;
+	border-color: transparent;
+	background-image: none;
+}
+
+.navbar-inverse .nav > li > a {
+  color: #fff;
+  font-weight:500;
+}
+
+h1 {
+	color: #fff;
+}
+
+h2 {
+	color: #fff;
+}
+
+.alert {
+	margin-left: 0px
+}
