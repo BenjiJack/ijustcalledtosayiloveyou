@@ -14,15 +14,16 @@
 	<div class="span4">
 	  	<h2>
 	 		<%= form_for(@user) do |f| %>
+	 		<%= render 'shared/error_messages' %>
 
-	 		<%= f.label :sendername, "Sender Name" %>
-	 		<%= f.text_field :sendername %>
+			<label for="user_sendername">Sender Name</label>
+	 		<input id="user_sendername" name="user[sendername]" size="30" type="text" />
 
-	 		<%= f.label :recipientname, "Recipient Name" %>
-	 		<%= f.text_field :recipientname %>
+	 		<label for="user_recipientname">Recipient Name</label>
+	 		<input id="user_recipientname" name="user[recipientname]" size="30" type="text" />
 
-	 		<%= f.label :recipientphone, "Recipient Phone Number" %>
-	 		<%= f.text_field :recipientphone %>
+	 		<label for="user_recipientphone">Recipient Phone Number</label>
+	 		<input id="user_recipientphone" name="user[recipientphone]" size="30" type="text" class="input-large bfh-phone" data-format="+1 (ddd) ddd-dddd"/>
 
 	 		<br>
  

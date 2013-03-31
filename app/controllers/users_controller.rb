@@ -22,15 +22,16 @@ require 'twilio-ruby'
 	#Make phone call and play sound file
 	@call = @client.account.calls.create(
   		:from => "+12677764203",
-  		:to => "+1#{@user[:recipientphone]}",
-
-  		:url => "http://agile-beach-2909.herokuapp.com/soundplay.html"
+  		:to => @user[:recipientphone],
+# returns XML using twimlets - see https://www.twilio.com/labs/twimlets/echo
+#<Response><Play>http://agile-beach-2909.herokuapp.com/ijustcalled.mp3</Play></Response>
+  		:url => "http://twimlets.com/echo?Twiml=%3CResponse%3E%3CPlay%3Ehttp%3A%2F%2Fagile-beach-2909.herokuapp.com%2Fijustcalled.mp3%3C%2FPlay%3E%3C%2FResponse%3E&"
 	)
 
 	#Send explanatory text message
 	@client.account.sms.messages.create(
   		:from => "+12677764203",
-  		:to => "+1#{@user[:recipientphone]}",
+  		:to => @user[:recipientphone],
   		:body => "#{@user[:sendername]} just called to say I love you!"
 	)
 
