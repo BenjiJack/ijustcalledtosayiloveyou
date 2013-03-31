@@ -38,7 +38,7 @@ require 'twilio-ruby'
 	@client.account.sms.messages.create(
   		:from => "+12677764203",
   		:to => @user[:recipientphone],
-  		:body => "#{@user[:sendername]} just called to say I love you!"
+  		:body => "#{@user[:sendername]} just called to say I love you! www.ijustcalledtosayiloveyou.com"
 	)
 
   		flash[:success] = "Sent!"
