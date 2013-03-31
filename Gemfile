@@ -5,6 +5,8 @@ gem 'bootstrap-sass', '2.1'
 
 gem 'twilio-ruby'
 
+gem 'validates_phone_number'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
