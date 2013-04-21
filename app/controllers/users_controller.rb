@@ -15,8 +15,8 @@ require 'twilio-ruby'
   	if @user.save
 
   	#Instantiate Twilio client
-	account_sid = 'AC31e65c7b5abd8ea30ade9abbbd169abf'
-	auth_token = 'ab3f73cd65470a3fc1ae817d74a56bbd'
+	account_sid = ***
+	auth_token = ***
 	@client = Twilio::REST::Client.new account_sid, auth_token
 
 	#Make phone call and play sound file
